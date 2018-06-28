@@ -32,10 +32,10 @@ jobs:
           - pip install .
           - pip install coveralls
           - yarn
-          - popd
         script:
           - pushd game_frontend
           - node djangoBundler.js
+          - popd
           - python all_tests.py --coverage
         after_success:
           - coveralls
