@@ -33,9 +33,9 @@ jobs:
           - pip install coveralls
           - yarn
         script:
-          - pushd game_frontend
+          - cd game_frontend
           - node djangoBundler.js
-          - popd
+          - cd ..
           - python all_tests.py --coverage
         after_success:
           - coveralls
