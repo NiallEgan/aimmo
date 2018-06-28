@@ -34,6 +34,7 @@ jobs:
           - yarn
         script:
           - cd game_frontend
+          - yarn global add parcel-bundler
           - node djangoBundler.js
           - cd ..
           - python all_tests.py --coverage
