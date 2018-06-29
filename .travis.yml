@@ -31,11 +31,9 @@ jobs:
         install:
           - pip install .
           - pip install coveralls
-          - yarn
         script:
           - cd game_frontend
-          - ls
-          - npm list -g
+          - npm install parcel-bundler
           - node djangoBundler.js
           - cd ..
           - python all_tests.py --coverage
