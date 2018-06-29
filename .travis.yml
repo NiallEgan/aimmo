@@ -35,7 +35,6 @@ jobs:
           - cd game_frontend
           - npm install parcel-bundler
           - npm install shelljs
-          - ls
           - node djangoBundler.js
           - cd ..
           - python all_tests.py --coverage
