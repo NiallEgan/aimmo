@@ -1,5 +1,5 @@
-const Bundler = require('parcel-bundler')
 const Path = require('path')
+const Bundler = require('parcel-bundler')
 const shell = require('shelljs')
 const fs = require('fs')
 
